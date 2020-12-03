@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>百度练习</title>
+  <!--淘宝练习阿里库-->
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2083492_m8forajhqdt.css">
+  <!--百度练习题阿里库-->
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2147666_p9vpjic9ui.css">
+  <link rel="stylesheet" href="./baidu_renwu.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h2>GTD&nbsp;Tools</h2>
+    </div>
+    <div class="gt-bd">
+      <div class="gt-fenlei" id="gt-fenlei">
+        <div class="fl-hd">
+          <h3>所有项目 <i id="all-pjt-length"></i></h3>
+          <h4>分类列表</h4>
+        </div>
+        <div class="all_pjt" id="all_pjt">
+
+        </div>
+        <div class="fl-footer" id="add_fl">
+          <h4><i class="iconfont icon-hao"></i>新增分类</h4>
+        </div>
+      </div>
+      <div class="gt-renwu">
+        <div class="rw-hd">
+          <span style="display: none" id="span-all" class="select_rw">所有</span>
+          <span style="display: none" id="span-no">未完成</span>
+          <span style="display: none" id="span-yes">已完成</span>
+        </div>
+        <div class="rw-all" id="rw-all">
+          <!--
+          <div class="rw-bd">
+            <div class="rw-date">
+              <p class="date">2015-04-28</p>
+            </div>
+            <div class="rw-name">
+              <div>
+                <p class="rw-title back-color-f2" id="OK" style="color: red;">to-do&nbsp;1</p>
+                <em style="display: none;">嗯嗯嗯嗯</em>
+              </div>
+              <div>
+                <p class="rw-title">to-do&nbsp;2</p>
+                <em style="display: none;">哈哈哈</em>
+              </div>
+            </div>
+          </div>
+          <div class="rw-bd">
+            <div class="rw-date">
+              <p class="date">2015-04-29</p>
+            </div>
+            <div class="rw-name">
+              <div>
+                <p class="rw-title">to-do&nbsp;3</p>
+                <em style="display: none;">哦哦哦</em>
+              </div>
+              <div>
+                <p class="rw-title">to-do&nbsp;4</p>
+                <em style="display: none;">啊啊啊啊</em>
+              </div>
+            </div>
+          </div>-->
+
+        </div>
+        <div class="rw-footer" id="add-renwu">
+          <h4><i class="iconfont icon-hao"></i>新增任务</h4>
+        </div>
+      </div>
+      <div class="gt-bianji">
+        <div class="bj-hd">
+          <h2></h2>
+          <ul class="clearfix" style="display:none">
+            <li><i class="iconfont icon-gou"></i></li>
+            <li><i class="iconfont icon-bianji"></i></li>
+          </ul>
+        </div>
+        <div class="bj-date">
+          <h2>
+            <span>任务日期<i class="riqi"></i></span>
+          </h2>
+        </div>
+        <div class="new-renwu" id="new-renwu">
+          <form>
+            请输入日期:<input type="date" id="new-rw-date">
+            请输入标题:<input type="text" id="new-rw-title">
+            请输入内容:<textarea name="" id="new-rw-text" cols="30" rows="10"></textarea>
+            <button id="no" type="button">取消</button>
+            <button id="yes" type="button">确定</button>
+          </form>
+        </div>
+        <div class="bj-neirong">
+          <div class="neirong-text"></div>
+          <div class="xiugai-neirong" style="display: none;">
+            <form action="">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <button type="button" id="xiugai-text-data">保存</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./baidu_renwu.js"></script>
+</body>
+
+</html>
